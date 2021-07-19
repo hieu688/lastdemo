@@ -1,0 +1,239 @@
+<%- include('../partials/header.ejs'); %>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-1 col-md-10">
+          <h3> Bracket for this tournament </h3>
+          <!-- ------------------------ -->
+          <!-- THE ADD BUTTON HAS BEEN FIXED -->
+          <!-- ------------------------ -->
+          
+          <br>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>Round of eight</th>
+                  
+                </tr>
+                </thead>
+                <tbody>
+                <!-- Template Row -->
+                <% for (let count = 0; count < 1; count++) { %>
+                <tr>
+                  <td><%= tournaments.PlayerOne %>    <%= tournaments.ScoreOne %></td>
+                  <td class="text-center"><%= tournaments.PlayerTwo %>    <%= tournaments.ScoreTwo %> </td>
+                 
+
+                  <td class="text-center">
+                    <!-- ------------------------ -->
+                    <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
+                    <!-- ------------------------ -->
+                    <td class="text-center"><a href="/tournaments/<%= tournaments._id %>/one/<%= tournaments.PlayerOne %>/<%= tournaments.PlayerTwo %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
+                  </td>
+
+                 
+
+
+                  
+                </tr>
+
+                <tr>
+                  <td><%= tournaments.PlayerThree %>    <%= tournaments.ScoreThree %></td>
+                  <td class="text-center"><%= tournaments.PlayerFour %>    <%= tournaments.ScoreFour %></td>
+                 
+
+                  <td class="text-center">
+                    <!-- ------------------------ -->
+                    <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
+                    <!-- ------------------------ -->
+                    <td class="text-center"><a href="/tournaments/<%= tournaments._id %>/two/<%= tournaments.PlayerThree %>/<%= tournaments.PlayerFour %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
+                  </td>
+
+                  
+
+
+                  
+                </tr>
+
+
+                <tr>
+                  <td><%= tournaments.PlayerFive %>    <%= tournaments.ScoreFive %></td>
+                  <td class="text-center"><%= tournaments.PlayerSix %>    <%= tournaments.ScoreSix %></td>
+                 
+
+                  <td class="text-center">
+                    <!-- ------------------------ -->
+                    <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
+                    <!-- ------------------------ -->
+                    <td class="text-center"><a href="/tournaments/<%= tournaments._id %>/three/<%= tournaments.PlayerFive %>/<%= tournaments.PlayerSix %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
+                  </td>
+
+                  
+
+
+                  
+                </tr>
+
+                <tr>
+                  <td><%= tournaments.PlayerSeven %>    <%= tournaments.ScoreSeven %></td>
+                  <td class="text-center"><%= tournaments.PlayerEight %>    <%= tournaments.ScoreEight %></td>
+                 
+
+                  <td class="text-center">
+                    <!-- ------------------------ -->
+                    <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
+                    <!-- ------------------------ -->
+                    <td class="text-center"><a href="/tournaments/<%= tournaments._id %>/four/<%= tournaments.PlayerSeven %>/<%= tournaments.PlayerEight %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
+                  </td>
+
+                 
+
+
+                  
+                </tr>
+
+
+              
+
+                <% } %>
+              </tbody>
+            </table>
+          </div>
+
+            <!-- ROUND OF 4 -->
+            <br>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>Round of four</th>
+                  
+                </tr>
+                </thead>
+                <tbody>
+                <!-- Template Row -->
+                <% for (let count = 0; count < 1; count++) { %>
+                <tr>
+                  <td><%= tournaments.WinnerFirstQuarterFinal %>    <%= tournaments.ScoreNine %></td>
+                  <td class="text-center"><%= tournaments.WinnerSecondQuarterFinal %>    <%= tournaments.ScoreTen %></td>
+                 
+
+                  <td class="text-center">
+                    <!-- ------------------------ -->
+                    <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
+                    <!-- ------------------------ -->
+                    <td class="text-center"><a href="/tournaments/<%= tournaments._id %>/five/<%= tournaments.WinnerFirstQuarterFinal %>/<%= tournaments.WinnerSecondQuarterFinal %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
+                  </td>
+
+                  
+
+                  
+                </tr>
+
+                <tr>
+                  <td><%= tournaments.WinnerThirdQuarterFinal %>    <%= tournaments.ScoreEleven %></td>
+                  <td class="text-center"><%= tournaments.WinnerFourthQuarterFinal %>     <%= tournaments.ScoreTwelve %></td>
+                 
+
+                  <td class="text-center">
+                    <!-- ------------------------ -->
+                    <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
+                    <!-- ------------------------ -->
+                    <td class="text-center"><a href="/tournaments/<%= tournaments._id %>/six/<%= tournaments.WinnerThirdQuarterFinal %>/<%= tournaments.WinnerFourthQuarterFinal %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
+                  </td>
+
+                  
+
+
+                  
+                </tr>
+
+
+               
+
+                <% } %>
+              </tbody>
+            </table>
+          </div>
+
+
+          <!-- FINAL -->
+          <br>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>Final</th>
+                 
+                </tr>
+                </thead>
+                <tbody>
+                <!-- Template Row -->
+                <% for (let count = 0; count < 1; count++) { %>
+                <tr>
+                  <td><%= tournaments.WinnerFirstSemiFinal %>    <%= tournaments.ScoreThirteen %></td>
+                  <td class="text-center"><%= tournaments.WinnerSecondSemiFinal %>    <%= tournaments.ScoreFourteen %></td>
+                 
+
+                  <td class="text-center">
+                    <!-- ------------------------ -->
+                    <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
+                    <!-- ------------------------ -->
+                    <td class="text-center"><a href="/tournaments/<%= tournaments._id %>/seven/<%= tournaments.WinnerFirstSemiFinal %>/<%= tournaments.WinnerSecondSemiFinal %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
+                  </td>
+
+                  
+
+
+                  
+                </tr>
+
+                
+
+                <% } %>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- WINNER -->
+          <br>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>Winner</th>
+                  
+                </tr>
+                </thead>
+                <tbody>
+                <!-- Template Row -->
+                <% for (let count = 0; count < 1; count++) { %>
+                <tr>
+                  <td><%= tournaments.WinnerFinal %></td>
+                  
+                
+                  
+                </tr>
+
+                
+
+                <% } %>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+<%- include('../partials/footer.ejs'); %>
+
+
+
+
+
+
+
+

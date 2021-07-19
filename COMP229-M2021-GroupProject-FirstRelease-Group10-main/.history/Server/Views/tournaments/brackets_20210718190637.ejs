@@ -1,0 +1,55 @@
+<%- include('../partials/header.ejs'); %>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-1 col-md-10">
+          <h3>Your tournaments </h3>
+          <!-- ------------------------ -->
+          <!-- THE ADD BUTTON HAS BEEN FIXED -->
+          <!-- ------------------------ -->
+          <a href="/tournaments/add" class="btn btn-primary"><i class="fa fa-plus"></i> Create a tournament</a>
+          <br>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th class="text-center">Date</th>
+                  <th class="text-center"></th>
+                  <th class="text-center"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <!-- Template Row -->
+                <% for (let count = 0; count < tournaments.length; count++) { %>
+                <tr>
+                  <td><%= tournaments[count].Name %></td>
+                  <td class="text-center"><%= tournaments[count].StartDate %></td>
+                 
+
+                  <td class="text-center">
+                    <!-- ------------------------ -->
+                    <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
+                    <!-- ------------------------ -->
+                    <td class="text-center"><a href="/tournaments/<%= tournaments[count]._id %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
+                  </td>
+
+                  <td class="text-center">
+                    <!-- ------------------------ -->
+                    <!-- DELETE BUTTON HAS BEEN ADDED HERE -->
+                    <!-- ------------------------ -->
+                    <td class="text-center"><a href="/tournaments/delete/<%= tournaments[count]._id %>" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt fa-sm"></i> Delete</a></td>
+                  </td>
+                </tr>
+                <% } %>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<%- include('../partials/footer.ejs'); %>
+
+

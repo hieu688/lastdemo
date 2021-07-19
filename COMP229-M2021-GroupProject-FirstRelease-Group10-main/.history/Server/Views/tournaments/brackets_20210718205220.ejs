@@ -1,0 +1,285 @@
+<%- include('../partials/header.ejs'); %>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-1 col-md-10">
+          <h3> Bracket for this tournament </h3>
+          <!-- ------------------------ -->
+          <!-- THE ADD BUTTON HAS BEEN FIXED -->
+          <!-- ------------------------ -->
+          
+          <br>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>Round of eight</th>
+                  
+                </tr>
+                </thead>
+                <tbody>
+                <!-- Template Row -->
+                <% for (let count = 0; count < 1; count++) { %>
+                <tr>
+                  <td><%= tournaments.PlayerOne %></td>
+                  <td class="text-center"><%= tournaments.PlayerTwo %></td>
+                 
+
+                  <td class="text-center">
+                    <!-- ------------------------ -->
+                    <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
+                    <!-- ------------------------ -->
+                    <td class="text-center"><a href="/tournaments/<%= tournaments._id %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
+                  </td>
+
+                  <td class="text-center">
+                    <!-- ------------------------ -->
+                    <!-- DELETE BUTTON HAS BEEN ADDED HERE -->
+                    <!-- ------------------------ -->
+                    <td class="text-center"><a href="/tournaments/delete/<%= tournaments._id %>" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt fa-sm"></i> Delete</a></td>
+                  </td>
+
+
+                  
+                </tr>
+
+                <tr>
+                  <td><%= tournaments.PlayerThree %></td>
+                  <td class="text-center"><%= tournaments.PlayerFour %></td>
+                 
+
+                  <td class="text-center">
+                    <!-- ------------------------ -->
+                    <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
+                    <!-- ------------------------ -->
+                    <td class="text-center"><a href="/tournaments/<%= tournaments._id %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
+                  </td>
+
+                  <td class="text-center">
+                    <!-- ------------------------ -->
+                    <!-- DELETE BUTTON HAS BEEN ADDED HERE -->
+                    <!-- ------------------------ -->
+                    <td class="text-center"><a href="/tournaments/delete/<%= tournaments._id %>" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt fa-sm"></i> Delete</a></td>
+                  </td>
+
+
+                  
+                </tr>
+
+
+                <tr>
+                  <td><%= tournaments.PlayerFive %></td>
+                  <td class="text-center"><%= tournaments.PlayerSix %></td>
+                 
+
+                  <td class="text-center">
+                    <!-- ------------------------ -->
+                    <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
+                    <!-- ------------------------ -->
+                    <td class="text-center"><a href="/tournaments/<%= tournaments._id %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
+                  </td>
+
+                  <td class="text-center">
+                    <!-- ------------------------ -->
+                    <!-- DELETE BUTTON HAS BEEN ADDED HERE -->
+                    <!-- ------------------------ -->
+                    <td class="text-center"><a href="/tournaments/delete/<%= tournaments._id %>" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt fa-sm"></i> Delete</a></td>
+                  </td>
+
+
+                  
+                </tr>
+
+                <tr>
+                  <td><%= tournaments.PlayerSeven %></td>
+                  <td class="text-center"><%= tournaments.PlayerEight %></td>
+                 
+
+                  <td class="text-center">
+                    <!-- ------------------------ -->
+                    <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
+                    <!-- ------------------------ -->
+                    <td class="text-center"><a href="/tournaments/<%= tournaments._id %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
+                  </td>
+
+                  <td class="text-center">
+                    <!-- ------------------------ -->
+                    <!-- DELETE BUTTON HAS BEEN ADDED HERE -->
+                    <!-- ------------------------ -->
+                    <td class="text-center"><a href="/tournaments/delete/<%= tournaments._id %>" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt fa-sm"></i> Delete</a></td>
+                  </td>
+
+
+                  
+                </tr>
+
+
+              
+
+                <% } %>
+              </tbody>
+            </table>
+          </div>
+
+            <!-- ROUND OF 4 -->
+            <br>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>Round of four</th>
+                  
+                </tr>
+                </thead>
+                <tbody>
+                <!-- Template Row -->
+                <% for (let count = 0; count < 1; count++) { %>
+                <tr>
+                  <td><%= tournaments.WinnerFirstQuarterFinal %></td>
+                  <td class="text-center"><%= tournaments.WinnerSecondQuarterFinal %></td>
+                 
+
+                  <td class="text-center">
+                    <!-- ------------------------ -->
+                    <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
+                    <!-- ------------------------ -->
+                    <td class="text-center"><a href="/tournaments/<%= tournaments._id %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
+                  </td>
+
+                  <td class="text-center">
+                    <!-- ------------------------ -->
+                    <!-- DELETE BUTTON HAS BEEN ADDED HERE -->
+                    <!-- ------------------------ -->
+                    <td class="text-center"><a href="/tournaments/delete/<%= tournaments._id %>" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt fa-sm"></i> Delete</a></td>
+                  </td>
+
+
+                  
+                </tr>
+
+                <tr>
+                  <td><%= tournaments.WinnerThirdQuarterFinal %></td>
+                  <td class="text-center"><%= tournaments.WinnerFourthQuarterFinal %></td>
+                 
+
+                  <td class="text-center">
+                    <!-- ------------------------ -->
+                    <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
+                    <!-- ------------------------ -->
+                    <td class="text-center"><a href="/tournaments/<%= tournaments._id %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
+                  </td>
+
+                  <td class="text-center">
+                    <!-- ------------------------ -->
+                    <!-- DELETE BUTTON HAS BEEN ADDED HERE -->
+                    <!-- ------------------------ -->
+                    <td class="text-center"><a href="/tournaments/delete/<%= tournaments._id %>" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt fa-sm"></i> Delete</a></td>
+                  </td>
+
+
+                  
+                </tr>
+
+
+               
+
+                <% } %>
+              </tbody>
+            </table>
+          </div>
+
+
+          <!-- FINAL -->
+          <br>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>Final</th>
+                 
+                </tr>
+                </thead>
+                <tbody>
+                <!-- Template Row -->
+                <% for (let count = 0; count < 1; count++) { %>
+                <tr>
+                  <td><%= tournaments.WinnerFirstSemiFinal %></td>
+                  <td class="text-center"><%= tournaments.WinnerSecondSemiFinal %></td>
+                 
+
+                  <td class="text-center">
+                    <!-- ------------------------ -->
+                    <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
+                    <!-- ------------------------ -->
+                    <td class="text-center"><a href="/tournaments/<%= tournaments._id %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
+                  </td>
+
+                  <td class="text-center">
+                    <!-- ------------------------ -->
+                    <!-- DELETE BUTTON HAS BEEN ADDED HERE -->
+                    <!-- ------------------------ -->
+                    <td class="text-center"><a href="/tournaments/delete/<%= tournaments._id %>" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt fa-sm"></i> Delete</a></td>
+                  </td>
+
+
+                  
+                </tr>
+
+                
+
+                <% } %>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- WINNER -->
+          <br>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>Winner</th>
+                  
+                </tr>
+                </thead>
+                <tbody>
+                <!-- Template Row -->
+                <% for (let count = 0; count < 1; count++) { %>
+                <tr>
+                  <td><%= tournaments.WinnerFinal %></td>
+                  
+                 
+
+                  <td class="text-center">
+                    <!-- ------------------------ -->
+                    <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
+                    <!-- ------------------------ -->
+                    <td class="text-center"><a href="/tournaments/<%= tournaments._id %>,<%= final %>"  class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
+                  </td>
+
+                  <td class="text-center">
+                    <!-- ------------------------ -->
+                    <!-- DELETE BUTTON HAS BEEN ADDED HERE -->
+                    <!-- ------------------------ -->
+                    <td class="text-center"><a href="/tournaments/delete/<%= tournaments._id %>" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt fa-sm"></i> Delete</a></td>
+                  </td>
+
+
+                  
+                </tr>
+
+                
+
+                <% } %>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+<%- include('../partials/footer.ejs'); %>
+
+
